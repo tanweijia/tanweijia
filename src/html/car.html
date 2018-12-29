@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>本来生活网购物车 - 中国家庭的优质食品购买平台，冷链配送、安全检测、基地直供</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/kuCity.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		<!-- [if lt IE 9] -->
+        	<script src="../js/html5shiv.min.js"></script>
+    	<!-- [endif] -->
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/kuCity.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/car.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="shouye">
+			<!-- top开始 -->
+			<div id="top">
+				<div class="container clearfix">
+					<div class="welcomelogin fl">
+						<p id="unlogin">您好，请
+							<a href="login.html">[登录]</a>
+							<a href="register.html">[注册]</a>
+							<a href="">[机构会员]</a>
+						</p>
+						<p id="loginAndOut">您好，
+							<span class="loginUname"></span>
+							<a href="javascript:;">[退出]</a>
+						</p>
+						<div class="city">
+							<a href="#">送至：<input class="sendcity" value="北京" style="width:28px;font-size:12px;"></input>
+							</a>
+						</div>
+					</div>
+					<ul class="fr">
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">本来礼物</a>
+						</li>
+						<li>
+							<a href="#">掌上本来</a>
+							<dl>
+								<dd>
+									<img src="../images/erwerma.png" />
+									<p>扫描下载客户端</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="#">客户服务</a>
+							<dl>
+								<dd>
+									<a href="#">在线客服</a>
+								</dd>
+								<dd>
+									<a href="#">联系客服</a>
+								</dd>
+								<dd>
+									<a href="#">销售中心</a>
+								</dd>
+								<dd>
+									<a href="#">帮助中心</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- top结束 -->
+			<!--logo搜索开始-->
+			<div id="logo">
+				<div class="container clearfix">
+					<h1>本来生活</h1>
+					<div class="car_top" style="height: 100px;">
+						<img src="../images/carStep.gif" class="fr"/>
+					</div>
+					<div class="mybuy" style="display: none;">
+						<dl>
+							<dt>
+								<div id="HeaderCartCount" class="buy_qty"></div>
+								<a href="car.html"><s></s>购物车</a>
+								<div class="bgbox"></div>
+							</dt>
+							<dd id="cartListView">
+								<ul style="overflow-y: scroll;">
+									<!--<li>
+										<div class="pic">
+											<a href="https://www.benlai.com/items-77717.html?sysno=337536" target="_blank" title="日本进口 Calbee佳可比薯条三兄弟咸味薯条80g">
+                                        	<img src="https://image1.benlailife.com//Product../images/000/000/077/717/medium/3e3444f8-9020-4020-951f-7eb496ee42ef.jpg"></a>
+										</div>
+										<div class="name">
+											<a href="https://www.benlai.com/items-77717.html?sysno=337536" target="_blank" title="日本进口 Calbee佳可比薯条三兄弟咸味薯条80g">日本进口 Calbee佳可比薯条三兄弟咸味薯条80g
+                                        	<span></span></a>
+										</div>
+										<div class="price">￥28.90</div>
+										<div class="talqty"><span>x</span>2</div>
+									</li>-->
+								</ul>
+								<div class="buy">
+									<p class="price">共
+										<i id="carListTotalCount">2</i>件商品    共计：
+										<span>￥57.80</span>
+									</p>
+									<p class="word">此金额尚未计入优惠、折扣部分</p>
+									<a href="car.html" class="buy_btn">去结算</a>
+								</div>
+								<div class="none_car">购物车中还没有商品，赶紧选购吧！</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--car主要部分开始-->
+			<div id="carmain">
+				<div class="container">
+					<h2 class="car_word"></h2>
+					<!--无商品-->
+					<div class="car_none">
+						<img src="../images/carNone.png"/>
+						<p>您还没有购买过商品，<a href="../index.html">去购物吧</a></p>
+					</div>
+					<!--有商品-->
+					<div class="car_have">
+						<section class="cartMain">
+							<div class="benlai">本来商品</div>
+							<div class="cartMain_hd">
+								<ul class="order_lists cartTop">
+									<li class="list_chk">
+										<!--所有商品全选-->
+										<input type="checkbox" id="all" class="whole_check" />
+										<label for="all"></label>
+									</li>
+									<li class="list_con">商品信息</li>
+									<li class="list_info">商品参数</li>
+									<li class="list_price">单价</li>
+									<li class="list_amount">数量</li>
+									<li class="list_sum">金额</li>
+									<li class="list_op">操作</li>
+								</ul>
+							</div>
+							<div class="cartBox">
+								<!-- <div class="shop_info" style="display:none;">
+		                            <div class="all_check">
+		                                店铺全选
+		                                <input type="checkbox" id="shop_a" class="shopChoice">
+		                                <label for="shop_a" class="shop"></label>
+		                            </div>
+		                            <div class="shop_name">
+		                                店铺：<a href="javascript:;">搜猎人艺术生活</a>
+		                            </div>
+		                        </div> -->
+		                        <div class="order_content">
+		                        	<!--js渲染-->
+		                        	<!--  <ul class="order_lists">
+		                                <li class="list_chk">
+		                                    <input type="checkbox" id="checkbox_2" class="son_check">
+		                                    <label for="checkbox_2"></label>
+		                                </li>
+		                                <li class="list_con">
+		                                    <div class="list_img"><a href="javascript:;"><img src="./images/1.png" alt=""></a></div>
+		                                    <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+		                                </li>
+		                                <li class="list_info">
+		                                    <p>规格：默认</p>
+		                                    <p>尺寸：16*16*3(cm)</p>
+		                                </li>
+		                                <li class="list_price">
+		                                    <p class="price">￥980</p>
+		                                </li>
+		                                <li class="list_amount">
+		                                    <div class="amount_box">
+		                                        <a href="javascript:;" class="reduce reSty">-</a>
+		                                        <input type="text" value="1" class="sum">
+		                                        <a href="javascript:;" class="plus">+</a>
+		                                    </div>
+		                                </li>
+		                                <li class="list_sum">
+		                                    <p class="sum_price">￥980</p>
+		                                </li>
+		                                <li class="list_op">
+		                                    <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+		                                </li>
+		                            </ul> -->
+		                        </div>
+							</div>
+							<!--底部-->
+							<div class="bar-wrapper">
+								<div class="bar-left">
+									<p id="allchecked">
+										<input type="checkbox" id="all2" class="whole_check2" />
+										<label for="all2"></label>
+									</p>
+									<p id="del_all" style="float: left;">
+										<a href="javascript:;" style="display: none;">删除<img src="../images/carDel.gif"/></a>
+									</p>
+								</div>
+								<div class="bar-right">
+									<div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+									<div class="totalMoney">共计：<strong class="total_text">0.00</strong></div>
+									<div class="calBtn"><a href="javascript:;">结算</a></div>
+								</div>
+							</div>
+						</section>
+						<section class="model_bg"></section>
+						<section class="my_model">
+							<p class="title">删除宝贝<span class="closeModel">X</span></p>
+							<p>您确认要删除该宝贝吗？</p>
+							<div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- footter底部开始 -->
+			<div id="footer">
+				<div class="container">
+					<div class="bar">
+						<div class="explain">
+							<dl>
+								<dt class="ico01"></dt>
+								<dd><span>18小时低温</span>全程冷链配送</dd>
+							</dl>
+							<dl>
+								<dt class="ico02"></dt>
+								<dd><span>0时差基地直供</span>农田到餐桌</dd>
+							</dl>
+							<dl>
+								<dt class="ico03"></dt>
+								<dd><span>43项检测</span>安全无农残</dd>
+							</dl>
+							<dl>
+								<dt class="ico04"></dt>
+								<dd><span>7*24小时营业</span>全年无休</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="footmain clearfix">
+						<dl>
+							<dt class="xs">新手指南</dt>
+							<dd>
+								<a href="#">购物流程</a>
+							</dd>
+							<dd>
+								<a href="#">会员政策</a>
+							</dd>
+							<dd>
+								<a href="#">联系客服</a>
+							</dd>
+							<dd>
+								<a href="#">积分政策</a>
+							</dd>
+							<dd>
+								<a href="#">加入我们</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="ps">配送方式</dt>
+							<dd>
+								<a href="#">全程冷链</a>
+							</dd>
+							<dd>
+								<a href="#">配送时间</a>
+							</dd>
+							<dd>
+								<a href="#">配送范围</a>
+							</dd>
+							<dd>
+								<a href="#">配送收费标准</a>
+							</dd>
+							<dd>
+								<a href="#">关于我们</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="zf">支付方式</dt>
+							<dd>
+								<a href="#">在线支付</a>
+							</dd>
+							<dd>
+								<a href="#">其他支付方式</a>
+							</dd>
+							<dd>
+								<a href="#">优惠券使用</a>
+							</dd>
+							<dd>
+								<a href="#">礼金卡使用</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="sh">售后服务</dt>
+							<dd>
+								<a href="#">验货与拒收政策</a>
+							</dd>
+							<dd>
+								<a href="#">退换货政策</a>
+							</dd>
+							<dd>
+								<a href="#">退换货流程</a>
+							</dd>
+							<dd>
+								<a href="#">退款流程</a>
+							</dd>
+							<dd>
+								<a href="#">发票制度</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="footbottom">
+						<dl>
+							<dt><img src="../images/footphone.gif"/>客服热线：4006-917-917（周一至周日 8:00-20:00）</dt>
+							<dd>
+								<em><a href="#">加入我们</a></em>
+								<em><a href="#">联系我们</a></em>
+								<em><a href="#">关于我们</a></em>
+								<em><a href="#">友情链接</a></em>
+								<em><a href="#">品牌食材</a></em>
+								<em><a href="#">食品经营许可证</a></em>
+								<em class="b0"><a href="#">营业执照</a></em>
+							</dd>
+							<dd>
+								<em><a target="_blank" href="#"><img src="../images/footpolice.png" />京公网安备 11010502022386号</a></em>
+								<em><a href="#" target="_blank">京ICP证120338号</a></em>
+								<em class="b0"><a href="#" target="_blank">京B2-20180980</a></em>
+
+							</dd>
+							<dd class="copy">&copy; 2012-2018 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司</dd>
+							<dd class="identify">
+								<a href="#" target="_blank"><img src="../images/footidentify.jpg" alt="可信网站"></a>
+							</dd>
+						</dl>
+					</div>
+					<!-- 右侧浮动开始 -->
+					<div class="floatRight">
+						<div id="floatRightList">
+							<a href="javascript:;" id="go_top" title="回到顶部" style=""></a>
+							<a href="car.html" id="go_cart" class="car_buy car_focus" title="前往购物车">0</a>
+							<a href="javascript:;" class="zhiCustomBtn service" data-type="easemob">&nbsp;</a>
+							<a id="three_code" href="javascript:;" hidefocus="true" class="three_code" title="点击查看二维码">&nbsp;</a>
+						</div>
+						<!-- 按加入购物车后伸缩 绝对定位right改变后出现的加入购物车 -->
+						<div class="new_car">
+							<div class="new_buy">
+								<ul id="item_add">
+									<!-- js渲染的效果 -->
+									<!-- <li class="b0">
+                                    <div class="pic">
+                                        <img src="https://image2.benlailife.com//Product../images/000/000/335/199/medium/825c130a-5bd2-43ba-a65a-5d6c50a630e9.jpg">
+                                    </div>
+                                    <div class="name">海南蜜宝红心火龙果2粒装（650g以上）<br>
+                                        <span>X 1 加入成功</span>
+                                    </div>
+                                    <div class="price">￥19.90</div>
+                                </li> -->
+								</ul>
+							</div>
+						</div>
+						<!-- js点击二维码出现多个二维码 -->
+						<div id="threecodeParent">
+							<div class="new_code1">
+								<div class="code_icon">
+									<span>
+                                    <img src="../images/code_weibo.gif" width="186" height="186" alt="本来微博 二维码"></span>
+									<b>本来微博 二维码</b>
+								</div>
+							</div>
+							<div class="new_code2">
+								<div class="code_icon">
+									<span>
+                                    <img src="../images/code_weixin.gif" width="186" height="186" alt="本来微信 二维码"></span>
+									<b>本来微信 二维码</b>
+								</div>
+							</div>
+							<div class="new_code3">
+								<div class="code_icon">
+									<span>
+                                    <img src="../images/code_app.png" width="186" height="186" alt="扫描下载客户端"></span>
+									<b>扫描下载客户端</b>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 右侧浮动结束 -->
+				</div>
+			</div>
+			<!-- footter底部结束 -->
+		</div>
+	</body>
+
+</html>

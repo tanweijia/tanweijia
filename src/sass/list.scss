@@ -1,0 +1,247 @@
+@charset "utf-8";//编码设置
+#main_list{
+    .fr{
+        width: 970px;
+        .list_name{
+            padding-top: 40px;
+            padding-bottom: 5px;
+            font: 400 20px/35px "微软雅黑";
+            color: #333;
+        }
+        .list_sort{
+            background-color: #f8f8f6;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-left: 10px;
+            li{/*浮动、相对定位、层级*/
+                float: left;
+                position: relative;
+                width:74px;
+                height: 33px;
+                z-index: 0;
+                a{
+                    display: block;
+                    width: 74px;
+                    height: 33px;
+                    line-height: 33px;
+                    text-align: center;
+                    color: #626262;
+                    &.on{/*点击后a标签添加class.on*/
+                        color: #fff;
+                    }
+                }
+                span{
+                    display: block;
+                    position: absolute;
+                    top: -3px;
+                    left: 7px;
+                    z-index: -1;
+                    width: 75px;
+                    height: 38px;
+                    &.up{background: url('../images/listicon.png') 0 -143px no-repeat;}
+                    &.down{background: url('../images/listicon.png') 0 -104px no-repeat;}
+                }
+
+            }
+        }
+        .list_ku{
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            margin-bottom: 30px;
+            li{
+                border-bottom: 1px solid #eee;
+                border-right: 1px solid #eee;
+                width: 241px;
+                float: left;
+                height: 394px;
+                position: relative;
+                z-index: 0;
+                background-color: #fff;
+                overflow: hidden;
+                .box{
+                    border: 4px solid #fff;
+                    width: 211px;
+                    height: 386px;
+                    padding: 0 11px;
+                    position: relative;
+                    transition: all .2s linear;
+                    .pic{
+                        margin-top: 26px;
+                        width: 211px;
+                        text-align: center;
+                        transition: all 0.2s linear;
+                        cursor: pointer;
+                        img{
+                            width: 201px;
+                            height: 201px;
+                        }
+                    }
+                    .name{
+                        height: 48px;
+                        width: 211px;
+                        text-overflow: clip;
+                        display: block;
+                        overflow: hidden;
+                        margin-top: 20px;
+                        transition: all 0.2s linear;
+                        &:hover{
+                            a,span{color: #ff6900!important;}
+                        }
+                        a{
+                            display: block;
+                            max-height: 24px;
+                            line-height: 24px;
+                            font: 400 14px/24px "Microsoft YaHei";
+                            color: #1b1b15;
+                            text-overflow: clip;
+                            display: block;
+                            overflow: hidden;
+                            font-size: 14px;
+                            transition: all 0.2s linear;
+                            cursor: pointer;
+                        }
+                        span{
+                            font: 400 12px/24px "Microsoft YaHei";
+                            color: #929292;
+                            text-overflow: clip;
+                            display: block;
+                            overflow: hidden;
+                            font-size: 14px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .price{
+                        font: 400 20px/25px "Microsoft YaHei";
+                        color: #ff6900;
+                        margin-top: 5px;
+                        transition: all .2s linear;
+                        span{
+                            font: 400 14px/25px "Microsoft YaHei";
+                            color: #686c69;
+                            text-decoration: line-through;
+                            margin-left: 10px;
+                        }
+                    }
+                    .qty{
+                        margin: 4px 0 0;
+                        float: right;
+                        display: none;
+                        a{
+                            background: url('../images/listicon.png') 0 0 no-repeat;
+                            width: 18px;
+                            height: 24px;
+                            display: block;
+                            float: left;
+                            color: #666;
+                            &.jian{background-position:0 0;}
+                            &.jia{background-position:-19px 0;}
+                        }
+                        input{
+                            border: 1px solid #eeeee7;
+                            width: 32px;
+                            height: 22px;
+                            float: left;
+                            text-align: center;
+                            font: 400 14px/22px "Microsoft YaHei";
+                            color: #626252;
+                        }
+                    }
+                    .btn{
+                        position: absolute;
+                        top: 390px;
+                        left: 0;
+                        transition: all .2s linear;
+                        z-index: 2;
+                        img{
+                            width: 233px;
+                            height: 32px;
+                        }
+                    }
+                }
+                &:hover{
+                    cursor:default;
+                    .box{
+                        border: 4px solid #f0f0f0;
+                        transition: all .2s linear;
+                    }
+                    .pic{
+                        margin-top: 10px;
+                        transition: all .2s linear;
+                    }
+                    .name{
+                        height: 72px;
+                        margin-top: 5px;
+                        transition: all .2s linear;
+                        cursor: pointer;
+                        a{
+                            max-height: 48px;
+                            transition: all .2s linear;
+                        }
+                    }
+                    .qty{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .btn{
+                        position: absolute;
+                        top: 354px;
+                        left: 0;
+                        transition: all .2s linear;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        #pagenum{
+            float: right;
+            margin-bottom: 40px;
+            margin-right: 10px;
+            border-left: 1px solid #d8d8d8;
+            p{
+                float:left;
+                span{
+                    float: left;
+                    border-right: 1px solid #d8d8d8;
+                    border-top: 1px solid #d8d8d8;
+                    border-bottom: 1px solid #d8d8d8;
+                    line-height: 22px;
+                    display: block;
+                    padding: 0 6px;
+                    color: #626262;
+                    &:hover{
+                        background-color: #8ab700;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        background-color: #8ab700;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            p#prev,p#next{
+                border-right: 1px solid #d8d8d8;
+                border-top: 1px solid #d8d8d8;
+                border-bottom: 1px solid #d8d8d8;
+                line-height: 22px;
+                display: block;
+                padding: 0 6px;
+                color: #626262;
+                &:hover{
+                    background-color: #8ab700;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                &.active{
+                    background-color: #8ab700;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    }
+}   

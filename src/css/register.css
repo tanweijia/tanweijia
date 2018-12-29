@@ -1,0 +1,323 @@
+@charset "UTF-8";
+#main_reg .pathHome {
+  width: 1200px;
+  float: left;
+  color: #959595;
+  line-height: 40px;
+}
+
+#main_reg .pathHome a {
+  color: #959595;
+}
+
+#main_reg .reg_bottom {
+  padding-bottom: 25px;
+}
+
+#main_reg .reg_bottom .register {
+  float: left;
+  width: 460px;
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  height: auto !important;
+  min-height: 388px;
+}
+
+#main_reg .reg_bottom .register .tit {
+  position: relative;
+  padding: 35px !important;
+}
+
+#main_reg .reg_bottom .register .tit p.ico01 {
+  float: left;
+  background: url("../images/regicon.png") no-repeat;
+  background-position: 0 0;
+  font: 400 18px/30px "Microsoft YaHei";
+  padding-left: 40px;
+  margin: 0 35px 35px 0;
+}
+
+#main_reg .reg_bottom .register .register_box {
+  padding: 0 30px;
+  float: left;
+  width: 400px;
+}
+
+#main_reg .reg_bottom .register .register_box dl {
+  /*手机号\验证、密码公共*/
+  float: left;
+  width: 398px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 7px 0;
+  position: relative;
+}
+
+#main_reg .reg_bottom .register .register_box dl.yanzhengma {
+  border: 0px;
+}
+
+#main_reg .reg_bottom .register .register_box dl .yes {
+  background-position: 0 -102px;
+}
+
+#main_reg .reg_bottom .register .register_box dl .no {
+  background-position: 0 -137px;
+}
+
+#main_reg .reg_bottom .register .register_box dl i {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  background: url("../images/regicon.png") no-repeat;
+}
+
+#main_reg .reg_bottom .register .register_box dl p {
+  /*中文框*/
+  float: left;
+  width: 100px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font: 400 14px/28px "Microsoft YaHei";
+  margin-right: 10px;
+  display: inline;
+}
+
+#main_reg .reg_bottom .register .register_box dl input {
+  /*输入框*/
+  font: 400 14px/28px "Microsoft YaHei";
+  width: 240px;
+  height: 28px;
+  color: #999;
+}
+
+#main_reg .reg_bottom .register .register_box dl dt {
+  float: left;
+  width: 258px;
+  border: 1px solid #ddd;
+  padding: 7px 0;
+}
+
+#main_reg .reg_bottom .register .register_box dl dt input {
+  font: 400 14px/28px "Microsoft YaHei";
+  width: 135px;
+  height: 28px;
+  border: 0;
+}
+
+#main_reg .reg_bottom .register .register_box dl dd {
+  float: right;
+  width: 130px;
+}
+
+#main_reg .reg_bottom .register .register_box dl dd .changeCode {
+  border: 1px solid #8ab700;
+  color: #8ab700;
+  display: block;
+  font: 400 14px/42px "Microsoft YaHei";
+  text-align: center;
+  width: auto;
+  height: 42px;
+}
+
+#main_reg .reg_bottom .register .register_box .tips {
+  /*错误提示信息*/
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  line-height: 30px;
+  color: #ff6900;
+}
+
+#main_reg .reg_bottom .register .register_box .tips a {
+  color: #666;
+  margin-left: 5px;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng {
+  float: left;
+  width: 400px;
+  margin-bottom: 30px;
+  margin-top: -15px;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng p {
+  float: left;
+  width: 88px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font: 400 14px/42px "Microsoft YaHei";
+  display: inline;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide {
+  /*拖拽框*/
+  float: right;
+  position: relative;
+  height: 44px;
+  width: 300px;
+  background-color: #dcdcdc;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi {
+  float: left;
+  width: 300px;
+  height: 44px;
+  margin: 0 auto;
+  background: #dcdcdc;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  font: 400 14px/44px "Microsoft YaHei";
+  color: #fff;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi .fugai {
+  width: 298px;
+  height: 44px;
+  background: #8ab800;
+  position: absolute;
+  left: -246px;
+  top: 0;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi .fugai .pullStop {
+  display: block;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #8ab800;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: url("../images/regicon.png") no-repeat 13px -94px #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi .fugai .pullStop:hover {
+  opacity: 0.8;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi .pullX {
+  display: block;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #8ab800;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: url("../images/regicon.png") no-repeat 12px -567px #fff;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+#main_reg .reg_bottom .register .register_box .dragyanzheng .slide .chizi .pullX:hover {
+  opacity: 0.8;
+}
+
+#main_reg .reg_bottom .register .register_box .yanzhengma {
+  /*验证码*/
+  width: 400px;
+}
+
+#main_reg .reg_bottom .register .register_box .choose {
+  float: left;
+  font: 400 14px/20px "Microsoft YaHei";
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#main_reg .reg_bottom .register .register_box .choose input {
+  float: left;
+  margin: 4px 8px 0 0;
+}
+
+#main_reg .reg_bottom .register .register_box .choose a {
+  color: #8ab700;
+  margin-left: 5px;
+}
+
+#main_reg .reg_bottom .register .register_box .btn a {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font: 400 24px/58px "Microsoft YaHei";
+  color: #fff;
+  background-color: #ff6900;
+}
+
+#main_reg .reg_bottom .register .register_box .btn .no {
+  /*默认选项没选中时的btn样式*/
+  background-color: #bbb;
+}
+
+#main_reg .reg_bottom .register .register_box .yizhuce {
+  float: left;
+  width: 100%;
+  text-align: right;
+  font: 400 14px/35px "Microsoft YaHei";
+  padding-bottom: 25px;
+}
+
+#main_reg .reg_bottom .register .register_box .yizhuce a {
+  color: #8ab700;
+  margin-left: 5px;
+}
+
+#main_reg .reg_bottom .register .other {
+  /*其他登录方式*/
+  padding: 0 30px;
+  float: left;
+  width: 400px;
+  border-top: 5px solid #f4f4f4;
+  padding-bottom: 10px;
+}
+
+#main_reg .reg_bottom .register .other .text {
+  font: 400 14px/50px "Microsoft YaHei";
+}
+
+#main_reg .reg_bottom .register .other li em {
+  margin: 0 10px 10px 0;
+  padding: 0;
+  float: left;
+}
+
+#main_reg .reg_bottom .register .other li em a {
+  font: 400 12px/30px "宋体";
+  color: #666;
+  padding: 0 6px 0 32px;
+  display: block;
+  height: 30px;
+  border: 1px solid #eaeaea;
+  white-space: nowrap;
+  width: auto;
+  background: url("../images/regicon.png") no-repeat #fbfbfb;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico01 {
+  background-position: 6px -197px;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico02 {
+  background-position: 6px -227px;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico03 {
+  background-position: 6px -257px;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico04 {
+  background-position: 6px -537px;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico05 {
+  background-position: 6px -757px;
+}
+
+#main_reg .reg_bottom .register .other li em a.ico06 {
+  background-position: 6px -807px;
+}

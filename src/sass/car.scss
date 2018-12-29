@@ -1,0 +1,48 @@
+@charset "utf-8";//编码设置
+#logo{
+    .car_top{
+        height: 100px;
+        line-height: 100px;
+        margin: 30px 100px 0 0;
+    }
+}
+#carmain{
+    .car_word{
+        height: 35px;
+        font: 400 16px/35px "Microsoft YaHei";
+    }
+    .car_none{
+        text-align: center;
+        padding: 100px 0;
+        img{
+            width: 80px;
+        }
+        p{
+            font: 400 14px/60px "Microsoft YaHei";
+            a{
+                color: #abd13e;
+                text-decoration: underline;
+            }
+        }
+    }
+    .car_have{
+        display:none;
+    }
+    .bar-left{
+        float: left;
+        color:#000;
+        p{
+            float: left;
+            height:50px;
+            line-height: 56px;
+        }
+        #del_all{
+            margin-left: 50px;
+            a{  
+                display: block;
+                color:#000;
+            }
+        }
+    }
+    
+}

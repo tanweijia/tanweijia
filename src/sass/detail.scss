@@ -1,0 +1,155 @@
+@charset "utf-8";//编码设置
+#detail{
+    .smallnav{
+        height: 40px;
+        line-height: 40px;
+        color:#959595;
+        font-size: 12px;
+    }
+    .goodsinf{
+        .goodsinfval{
+            margin-left: 60px;
+            h2{
+                height: 100px;
+                font: 800 26px/34px "Microsoft YaHei";
+                color: #4c4c4c;
+                border-bottom:1px solid #e0e0e0;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    color: #ff6900;
+                    line-height: 62px;
+                }
+            }
+            .price{
+                margin:24px 0 24px;
+                font: 800 26px/26px "Microsoft YaHei";
+                color: #ff6900;
+                span{
+                    display: block;
+                    float: left;
+                }
+                .sell{
+                    color: #fff;
+                    font-size: 14px;
+                    background-color: #ff6900;
+                    line-height: 26px;
+                    padding: 0 8px;
+                    margin-right: 10px;
+                }
+                .cutprice{
+                    font: 800 26px/26px "Microsoft YaHei";
+                    color: #ff6900;
+                }
+                .oldprice{
+                    font: 800 16px/26px "Microsoft YaHei";
+                    color: #4c4c4c;
+                    margin-left: 10px;
+                    text-decoration: line-through;
+                }
+                .notice{
+                    font-family: "宋体","Arial Narrow",HELVETICA;
+                    font-size: 12px;
+                    color: #333;
+                    padding: 0;
+                    color: #ff6900;
+                    background: url('../images/iconSMdetail.gif') 10px -63px no-repeat;
+                    border: 1px solid #e7e7e7;
+                    line-height: 18px;
+                    color: #4c4c4c;
+                    padding: 0 10px 0 25px;
+                    display: block;
+                    margin: 3px 0 0 20px;
+                }
+            }
+            .byphone{
+                float: left;
+                width: 125px;
+                margin-bottom: 18px;
+                position:relative;
+                &:hover dd{
+                    display: block;
+                }
+                dt{
+                    height: 26px;
+                    background: url('../images/detailbyphone.png') 0 0 no-repeat #ff6900;
+                    font-size: 14px;
+                    color: #fff;
+                    padding-left: 28px;
+                    line-height: 26px;
+                    text-decoration: none;
+                }
+                dd{
+                    width: 220px;
+                    position:absolute;
+                    z-index: 1;
+                    left: 0;
+                    top: 26px;
+                    width: 220px;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    display: none;
+                    img{width: 220px;}
+
+                }
+            }
+                    
+            .qty{
+                margin-top:78px;
+                border-top:1px solid #e0e0e0;
+                padding-top:20px;
+                .changeqty{
+                    width: 75px;
+                    float: left;
+                    margin-right: 15px;
+                    input{
+                        border: 1px solid #cdcdcd;
+                        width: 54px;
+                        height: 48px;
+                        font: 400 24px/48px "Microsoft YaHei";
+                        color: #626262;
+                        text-align: center;
+                        float: left;
+                    }
+                    a{
+                        float: left;
+                        width: 19px;
+                        height: 25px;
+                        display: block;
+                        background: url('../images/icondetailchange.gif') 0 -52px no-repeat;
+                    }
+                    .jian{
+                        background-position:-20px -52px;
+                    }
+                }
+                .buy_btn_detail{
+                    float: left;
+                    margin-right: 15px;
+                    width: 182px;
+                    height: 52px;
+                    display: block;
+                    background: url('../images/icondetail.gif') no-repeat;
+                }
+                .buyinf{
+                    float: left;
+                    margin-right: 15px;
+                    height: 50px;
+                    line-height: 60px;
+                    span{
+                        font: 400 18px/52px "Microsoft YaHei";
+                        color: #ff6900;
+                        padding: 0 8px;
+                    }
+                    a{
+                        color: #ff6900;
+                        padding: 0 5px;
+                    }
+
+
+                }
+            }    
+        }
+    }
+}
